@@ -1,5 +1,5 @@
 <?php
-include_once "menu.php";
+include_once ("menu_item.php");
 
 $home = new Menu_Item("Home","/",3,"Opening Screen"),
 $dashboard = new Menu_Item("Dashboard","dashboard.php",3,"Your Dashboard"),
@@ -43,6 +43,15 @@ fuction get_html(){
 public function add_menu_item($Menu_Item){
     array_push($this->menus, $Menu_Item);
     
+}
+public function get_menu_item($Menu_Item){
+    for($i =0; $i<count($this->menus);$i++){
+        if($this->menus[i] == $menu_text) {
+            return $menu_text[i];
+        }else{
+            return false;
+        }
+    }
 }
 }
 ?>
