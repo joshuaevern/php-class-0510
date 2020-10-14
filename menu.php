@@ -42,7 +42,7 @@ fuction get_html(){
 }
 public function add_menu_item($Menu_Item){
     array_push($this->menus, $Menu_Item);
-    hhhhh
+    
 }
 }
 ?>
